@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root {
+  --color-primary: #2f80ed;
+  --color-secondary: #6b7280;
+  --color-accent: #34d399;
+
+  --font-heading: "Protest Riot", sans-serif;
+  --font-body: "Poppins", sans-serif;
+}
+html {
+  font-family: sans-serif;
+  font-size: 62.5%;
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-block: 10rem;
+  scroll-snap-type: y proximity;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-destination: 100vh;
+  scroll-snap-coordinate: center;
+  scroll-snap-stop: always;
+}
+body {
+  /* background-color: #f0f0f0;
+        color: #222; */
+  background-color: var(--color-primary);
+  /* background-color: rgb(38, 74, 136); */
+  /* background-image: linear-gradient(
+    to bottom,
+    rgba(82, 118, 181, 0.768),
+    rgba(28, 59, 111, 0.942)
+  ); */
+  background-blend-mode: screen;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: #f0f0f0; */
+  color: #222;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+}
+h1 {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  color: skyblue;
+  font-size: 7rem;
+  line-height: 1.1;
+  margin: 0;
+}
